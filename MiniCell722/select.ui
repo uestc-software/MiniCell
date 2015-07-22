@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Select</class>
+ <widget class="QWidget" name="Select">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Oganisms Selector</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>681</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="selectUILayout">
+    <item row="0" column="1">
+     <widget class="QListWidget" name="selected"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pwBtn">
+      <property name="text">
+       <string>Generate metabolic pathway</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="submit">
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="mdBtn">
+      <property name="text">
+       <string>Generate metabolic module</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="5">
+     <widget class="QListWidget" name="notselected">
+      <item>
+       <property name="text">
+        <string>aci</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>bsu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>eco</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ftn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>hin</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>hpy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>mge</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>mpu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>mtu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>pau</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sao</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>spr</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>spu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>stt</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>vch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>stm</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
