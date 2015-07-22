@@ -37,3 +37,6 @@ FORMS    += mainwidget.ui \
     resultwidght.ui \
     pathwaywidget.ui \
     modulewidget.ui
+
+RESOURCES += \
+    image.qrc

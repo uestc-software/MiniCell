@@ -6,23 +6,44 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>900</width>
-    <height>600</height>
+    <width>950</width>
+    <height>630</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWidget00</string>
   </property>
-  <widget class="QWidget" name="gridLayoutWidget">
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="gridWidget" native="true">
    <property name="geometry">
     <rect>
-     <x>-1</x>
-     <y>-1</y>
-     <width>901</width>
-     <height>601</height>
+     <x>24</x>
+     <y>10</y>
+     <width>900</width>
+     <height>599</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <layout class="QGridLayout" name="mainUILayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="sizePolicy">
@@ -31,11 +52,20 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>599</height>
+       </size>
+      </property>
       <property name="baseSize">
        <size>
         <width>0</width>
         <height>0</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
       </property>
       <property name="tabPosition">
        <enum>QTabWidget::North</enum>
@@ -59,6 +89,22 @@
        <attribute name="title">
         <string>Oganisms Selector</string>
        </attribute>
+       <widget class="QLabel" name="lab1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>900</width>
+          <height>579</height>
+         </rect>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_result">
        <property name="sizeIncrement">
@@ -70,6 +116,19 @@
        <attribute name="title">
         <string>EssentialGene Result</string>
        </attribute>
+       <widget class="QLabel" name="lab2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>900</width>
+          <height>579</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_pathway">
        <attribute name="title">
@@ -88,6 +147,21 @@
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="backgound">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>630</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>back</string>
+   </property>
+  </widget>
+  <zorder>backgound</zorder>
+  <zorder>gridWidget</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

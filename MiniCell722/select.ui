@@ -18,8 +18,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>681</width>
-     <height>431</height>
+     <width>611</width>
+     <height>401</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="selectUILayout">
@@ -35,6 +35,11 @@
     </item>
     <item row="2" column="1">
      <widget class="QPushButton" name="submit">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+alternate-background-color: rgb(255, 21, 52);
+border-color: rgb(255, 12, 28);</string>
+      </property>
       <property name="text">
        <string>Submit</string>
       </property>
