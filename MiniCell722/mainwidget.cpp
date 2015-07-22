@@ -6,6 +6,7 @@
 #include <modulewidget.h>
 #include "mainwidget.h"
 #include <QMouseEvent>
+#include <QToolButton>`
 
 MainWidget::MainWidget(QWidget *parent) :
     QWidget(parent),
@@ -13,8 +14,32 @@ MainWidget::MainWidget(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    //隐藏菜单栏
     setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
     setMouseTracking(true);
+
+    int width=900; //获取界面的宽度
+
+    //构建最小化、最大化、关闭按钮
+    QToolButton *minButton = new QToolButton(this);
+    QToolButton *closeButton= new QToolButton(this);
+    //获取最小化、关闭按钮图标
+    QPixmap minPix  = style()->standardPixmap(QStyle::SP_TitleBarMinButton);
+    QPixmap closePix = style()->standardPixmap(QStyle::SP_TitleBarCloseButton);
+    minButton->setIcon(minPix);
+    closeButton->setIcon(closePix);
+    //设置最小化、关闭按钮在界面的位置
+    minButton->setGeometry(width-46,5,20,20);
+    closeButton->setGeometry(width-25,5,20,20);
+    //设置鼠标移至按钮上的提示信息
+    minButton->setToolTip(tr("最小化"));
+    closeButton->setToolTip(tr("关闭"));
+    //设置最小化、关闭按钮的样式
+    minButton->setStyleSheet("background-color:transparent;");
+    closeButton->setStyleSheet("background-color:transparent;");
+
+    connect(minButton, SIGNAL(clicked()), this, SLOT(showMinimized()));
+    connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
 
     //new widget
     Select *selcWidget = new Select(ui->tab_select);
